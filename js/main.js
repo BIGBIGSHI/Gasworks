@@ -20,11 +20,18 @@
         },
     });
 
-    var menu = document.getElementById("menu");
-    menu.onclick = function(){
-        $(".menuList").slideToggle();
+    var menuBtn = document.querySelector(".menuBtn");
+    var menuList = document.querySelector(".menuList");
+    menuBtn.onclick = function () {
+        if (hasClass(this, "isActive")) {
+            removeClass(menuList, "show");
+            removeClass(this, "isActive");
+        } else {
+            addClass(this, "isActive");
+            addClass(menuList, "show");
+        }
+        
     };
-
 
     function hasClass(elements, cName) {
         return !!elements.className.match(new RegExp("(\\s|^)" + cName + "(\\s|$)"));
