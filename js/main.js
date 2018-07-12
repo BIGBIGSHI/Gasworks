@@ -33,6 +33,18 @@
         
     };
 
+    $(".navBar").hover(function(){
+        $(this).children(".navDetail").show();
+    },function(){
+        $(this).children(".navDetail").hide();
+    });
+
+    $(".navName").hover(function(){
+        $(this).addClass("navHover");
+    },function(){
+        $(this).removeClass("navHover");
+    });
+
     function hasClass(elements, cName) {
         return !!elements.className.match(new RegExp("(\\s|^)" + cName + "(\\s|$)"));
     };

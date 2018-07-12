@@ -1,0 +1,174 @@
+.container{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.container > li{
+	padding: 30px 0 ;
+	padding-left: 0;
+}
+
+.container > li:nth-of-type(odd){
+	background: #fff;
+}
+
+.container >li:nth-of-type(even){
+	background: #f0f0f0;
+}
+
+.perple{
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.nameDiv{
+	display: flex;
+	float: left;
+	align-items: center;
+	height: 70px;
+}
+
+.nameDiv > img{
+	width: 26px;
+}
+
+.nameDiv > .name{
+	font-size: 21px;
+	font-weight: bold;
+	margin-left: 25px;
+}
+
+.job{
+	height: 70px;
+	line-height: 70px;
+	display: block;
+	float: left;
+	font-size: 21px;
+	font-weight: bold;
+	margin-left: 30px;
+}
+
+.introduction{
+	clear: both;
+	height: auto;
+	line-height: 25px;
+	color: #000;
+	font-size: 15px;
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 1200px)
+{
+	.perple{
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 640px)
+{
+	.perple{
+		padding: 0 15px;
+	}
+
+	.nameDiv{
+		height: 60px;
+		line-height: 60px;
+		clear: both;
+	}
+
+	.nameDiv > img{
+		width: 22px;
+	}
+
+	.nameDiv > .name{
+		font-size: 20px;
+		margin-left: 20px;
+	}
+
+	.job{
+		height: 60px;
+		line-height: 60px;
+		clear: both;
+		font-size: 20px;
+		margin-left: 0px;
+	}
+
+	.introduction{
+		margin-top: 125px;
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 480px)
+{
+	.perple{
+		padding: 0 10px;
+	}
+
+	.nameDiv{
+		height: 50px;
+		line-height: 50px;
+		clear: both;
+	}
+
+	.nameDiv > img{
+		width: 20px;
+	}
+
+	.nameDiv > .name{
+		font-size: 16px;
+		margin-left: 18px;
+	}
+
+	.job{
+		height: 50px;
+		line-height: 50px;
+		clear: both;
+		font-size: 16px;
+		margin-left: 0px;
+	}
+
+	.introduction{
+		margin-top: 105px;
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
+}
+
+@media (max-width: 375px)
+{
+	.nameDiv{
+		height: 45px;
+		line-height: 45px;
+		clear: both;
+	}
+
+	.nameDiv > img{
+		width: 20px;
+	}
+
+	.nameDiv > .name{
+		font-size: 14px;
+		margin-left: 15px;
+	}
+
+	.job{
+		height: 45px;
+		line-height: 45px;
+		clear: both;
+		font-size: 14px;
+		margin-left: 0px;
+	}
+
+	.introduction{
+		margin-top: 95px;
+		font-size: 13px;
+		margin-bottom: 15px;
+	}
+}
+
+
+
