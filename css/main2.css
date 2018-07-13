@@ -14,6 +14,9 @@ body{
 
 .navTop{
 	background: #000;
+	position: fixed;
+	z-index: 3;
+	width: 100%;
 }
 
 .nav{
@@ -74,7 +77,8 @@ body{
 	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 100%;
-	font-size: 0;
+	position: fixed;
+	z-index: 3;
 }
 
 .menu > .menuLogo{
@@ -86,8 +90,8 @@ body{
 	display: block;
 	position: relative;
 	z-index: 2;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	margin-right: 40px;
 	line-height: 0;
 	cursor: pointer;
@@ -112,7 +116,7 @@ body{
 	transition-property: top, transform;
 }
 .menuBtn span:before {
-	top: -12px;
+	top: -10px;
 }
 
 .menuBtn span:after {
@@ -120,7 +124,7 @@ body{
 }
 
 .menuBtn span:after {
-	bottom: -12px;
+	bottom: -10px;
 }
 
 .menuBtn span:before, .menuBtn span:after {
@@ -203,8 +207,12 @@ body{
 	position: absolute;
 }
 
+.fixedTop{
+	height: 70px;
+}
+
 .banner{
-	height: 561px;
+	height: 500px;
 }
 
 .banner .bannerIMG{
@@ -245,17 +253,10 @@ body{
 	height: 17px;
 }
 
-@media (max-width: 1600px){
-	.banner{
-		height: 550px;
-	}
-
-}
-
-@media (max-width: 1500px)
+@media (max-width: 1300px)
 {
 	.banner{
-		height: 500px;
+		height: 450px;
 	}
 
 }
@@ -272,6 +273,10 @@ body{
 		width: 100%;
 		height: 60px;
 		background: #000;
+	}
+
+	.fixedTop{
+		height: 60px;
 	}
 }
 

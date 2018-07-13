@@ -1,4 +1,6 @@
 (function(){
+	var winW = $(window).width();
+
 	var menuBtn = document.querySelector(".menuBtn");
 	var menuList = document.querySelector(".menuList");
 	menuBtn.onclick = function () {
@@ -23,6 +25,23 @@
 	},function(){
 		$(this).removeClass("navHover");
 	});
+
+	// var bescroll = $(document).scrollTop();
+	// function ss(){
+	// 	$(window).scroll(function(){
+	// 		var afscroll = $(document).scrollTop();
+	// 		var res = afscroll - bescroll;
+	// 		if(res>0){
+
+	// 		}else{
+	// 			if(winW <= 640){
+	// 				window.location.href="../index.html";
+	// 			}
+	// 			bescroll = afscroll;
+	// 		}
+	// 	});
+	// }
+	// ss();
 
 	function hasClass(elements, cName) {
 		return !!elements.className.match(new RegExp("(\\s|^)" + cName + "(\\s|$)"));

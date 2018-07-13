@@ -22,7 +22,7 @@ input, select, textarea, button {
 }
 
 .banner{
-	height: 750px;
+	height: 650px;
 }
 
 .banner .bannerIMG{
@@ -35,20 +35,25 @@ input, select, textarea, button {
 	display: block;
 	position: absolute;
 	z-index: 2;
-	width:168px;
+	width:130px;
 	left: 50%;
-	margin-left: -84px;
+	margin-left: -65px;
 	margin-top:30px;
+}
+
+.navTop{
+	height: 70px;
+	background: none;
+	width: 100%;
+	position: absolute;
+	margin-top: -70px;
+	z-index: 2
 }
 
 .nav{
 	height: 70px;
 	width: 1200px;
-	position: absolute;
-	left: 50%;
-	margin-left: -600px;
-	margin-top: -70px;
-	z-index: 2;
+	margin:0 auto;
 }
 
 .nav > .navBar{
@@ -93,6 +98,12 @@ input, select, textarea, button {
 	display: block;;
 }
 
+.fixed{
+	margin-top: 0px;
+	position: fixed;
+	top: 0;
+}
+
 .navHover{
 	background: #b3925b;
 }
@@ -105,7 +116,13 @@ input, select, textarea, button {
 	z-index: 25;
 	top: 0;
 	width: 100%;
-	font-size: 0;
+	align-items:center;
+	height: 60px;
+	background: rgba(0,0,0,0.5);
+}
+
+.black{
+	background: rgba(0,0,0);
 }
 
 .menu > .menuLogo{
@@ -117,8 +134,8 @@ input, select, textarea, button {
 	display: block;
 	position: relative;
 	z-index: 2;
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	margin-right: 40px;
 	line-height: 0;
 	cursor: pointer;
@@ -143,7 +160,7 @@ input, select, textarea, button {
 	transition-property: top, transform;
 }
 .menuBtn span:before {
-	top: -12px;
+	top: -10px;
 }
 
 .menuBtn span:after {
@@ -151,7 +168,7 @@ input, select, textarea, button {
 }
 
 .menuBtn span:after {
-	bottom: -12px;
+	bottom: -10px;
 }
 
 .menuBtn span:before, .menuBtn span:after {
@@ -280,7 +297,7 @@ input, select, textarea, button {
 
 @media (max-width: 1700px){
 	.banner{
-		height: 650px;
+		height: 600px;
 	}
 
 	.swiper-button-prev{
@@ -328,14 +345,9 @@ input, select, textarea, button {
 
 	.menu{
 		display: flex;
-		align-items:center;
-		width: 100%;
-		height: 60px;
-		position: absolute;
-		background: rgba(0,0,0,0.5);
 	}
 
-	.nav{
+	.navTop{
 		display: none;;
 	}
 }
